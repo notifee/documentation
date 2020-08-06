@@ -5,17 +5,11 @@ next: /react-native/docs/integrations/fcm
 previous: /react-native/docs/events
 ---
 
-Triggers can be used to display notifications in-advance when a specific condition is met such as time or location.
+Triggers can be used to display notifications in-advance when a specific condition is met such as time.
 
-For example, you may wish to notify your user when they have a meeting at work, or if they're in a store to buy a birthday card for their friend.
+For example, you may wish to notify your user when they have a meeting at work.
 
 <Vimeo id="triggers-example" caption="Triggers Example" />
-
-It is possible to do this with remote notifications, but the delivery of the notification can be delayed by network connectivity or battery power of the device.
-
-Trigger notifications are unaffected, making them more reliable at ensuring future notifications are displayed at the correct time and place.
-
-With Notifee, you can create a notification that can be triggered by a timestamp, location-triggered notifications are not yet implemented.
 
 > Currently only supported on Android, but iOS will be coming soon.
 
@@ -24,6 +18,7 @@ With Notifee, you can create a notification that can be triggered by a timestamp
 ```js
 function Screen() {
   async function onCreateTriggerNotification() {
+    import notifee, { TimeTrigger, TriggerType, TimeUnit } from '@notifee/react-native';
     // Create a time-based trigger
     const trigger: TimeTrigger = {
       type: TriggerType.TIME,
@@ -65,6 +60,8 @@ Let's update our trigger we created previously, but this time your user wants to
 
 ```js
 async function onCreateTriggerNotification() {
+  import notifee, { TimeTrigger, TriggerType, TimeUnit } from '@notifee/react-native';
+
    const date = new Date(Date.now() + 600000);
    date.setDate(date.getDate() + 7); // initial trigger notification next week
 
