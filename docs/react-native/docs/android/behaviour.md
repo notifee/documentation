@@ -165,7 +165,7 @@ if (notifee.isBatteryOptimizationEnabled()) {
         // 3. launch intent to navigate the user to the appropriate screen
         {
           text: 'OK, open settings',
-          onPress: () => notifee.openBatteryOptimizationSettings(),
+          onPress: async () => await notifee.openBatteryOptimizationSettings(),
         },
         {
           text: "Cancel",
