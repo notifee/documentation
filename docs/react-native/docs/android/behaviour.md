@@ -157,7 +157,7 @@ Below is a snippet on how to use these methods:
 ```js
 // 1. checks if battery optimization is enabled
 const batteryOptimizationEnabled = await notifee.isBatteryOptimizationEnabled();
-if (batteryOptimizationEnabled()) {
+if (batteryOptimizationEnabled) {
   // 2. ask your users to disable the feature
   Alert.alert(
       'Restrictions Detected',
