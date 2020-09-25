@@ -22,7 +22,7 @@ import notifee, { TimestampTrigger, TriggerType } from '@notifee/react-native';
 
 function Screen() {
   async function onCreateTriggerNotification() {
-    Date date = Date.now();
+    const date = new Date(Date.now());
     date.setHours(11);
     date.setMinutes(10);
 
@@ -69,7 +69,7 @@ Let's update our trigger we created previously to occur weekly.
 import notifee, { TimestampTrigger, TriggerType } from '@notifee/react-native';
 
 async function onCreateTriggerNotification() {
-    Date date = Date.now();
+    const date = new Date(Date.now());
     date.setHours(11);
     date.setMinutes(10);
 
