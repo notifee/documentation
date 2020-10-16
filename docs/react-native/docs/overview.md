@@ -27,7 +27,7 @@ With Notifee requiring a paid license for release builds, we appreciate this mod
 Open Source alternatives are available if required:
 
 - [wix/react-native-notifications](https://github.com/wix/react-native-notifications).
-- [react-native-push-notifications-ios](https://github.com/react-native-push-notification-ios/push-notification-ios).
+- [react-native-push-notification-ios](https://github.com/react-native-push-notification-ios/push-notification-ios).
 - [zo0r/react-native-push-notification](https://github.com/zo0r/react-native-push-notification).
 - [invertase/react-native-firebase](https://v5.rnfirebase.io/docs/v5.x.x/notifications/introduction) (version 5 only).
 - [expo-notifications](https://docs.expo.io/push-notifications/overview/)
