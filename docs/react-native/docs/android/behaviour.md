@@ -39,7 +39,7 @@ sound directly on the notification:
 // Android >= 8.0 (API level 26)
 notifee.createChannel({
   id: 'custom-sound',
-  title: 'Channel with custom sound',
+  name: 'Channel with custom sound',
   sound: 'hollow.mp3',
 });
 
