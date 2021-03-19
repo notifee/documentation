@@ -1,8 +1,8 @@
 ---
 title: Remote Notification support
 description:  Utilise the power of Notifee with remote notifications.
-next: /react-native/docs/ios/remote-notification-support
-previous: /react-native/docs/ios/remote-notification-support
+next: /
+previous: /
 ---
 
 ## Remote Notification Support
@@ -19,7 +19,7 @@ To get started, you will need to implement a [Notification Service Extension](ht
 * A modal will present a list of possible targets, scroll down or use the filter to select Notification Service Extension. Press Next.
 * Add a product name (use `NotifeeNotificationService` to follow along) and click Finish
 
-<Vimeo id="remote-notification-support-1" caption="Step 1 - Add Your Notification Service Extension" />
+<!-- <Vimeo id="remote-notification-support-1" caption="Step 1 - Add Your Notification Service Extension" /> -->
 
 ## Add target to the Podfile
 
@@ -28,16 +28,19 @@ Ensure that your new extension has access to `NotifeeExtensionHelper` by adding 
 * Scroll down to the bottom of the file and add
 
 ```yaml
+$NotifeeExtension = true
+
 target 'NotifeeNotificationService' do
-  pod 'RNNotifee/NotifeeExtensionHelper'
+  pod 'RNNotifeeCore', :path => '../node_modules/@notifee/react-native/RNNotifeeCore.podspec'
 end
+
 ```
 
 * Install or update your pods using pod install from the ios folder
 
 `pod install --repo-update`
 
-<Vimeo id="remote-notification-support-2" caption="Step 2 - Update Your Pods" />
+<!-- <Vimeo id="remote-notification-support-2" caption="Step 2 - Update Your Pods" /> -->
 
 ## Use the extension helper
 
@@ -56,9 +59,9 @@ At this point everything should still be running normally. This is the final ste
 - self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [modified]", self.bestAttemptContent.title];
     
 - self.contentHandler(self.bestAttemptContent);
-+ [[NotifeeExtensionHelper extensionHelper] populateNotificationContent:self.bestAttemptContent withContentHandler:contentHandler];
++ [NotifeeExtensionHelper populateNotificationContent:self.bestAttemptContent withContentHandler:contentHandler];
 ```
-<Vimeo id="remote-notification-support-3" caption="Step 3 - Edit NotificationService.m" />
+<!-- <Vimeo id="remote-notification-support-3" caption="Step 3 - Edit NotificationService.m" /> -->
 
 Before, moving to the next step, run the app and check it builds successfully – make sure you have the correct target selected. 
 
