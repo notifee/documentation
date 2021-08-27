@@ -5,6 +5,9 @@ next: /react-native/docs/usage
 previous: /react-native/docs/license-keys
 ---
 
+## (unreleased)
+- **[Android]: BREAKING CHANGE** - you must add a new maven local repository to your `android/build.gradle` file. (Fixes [#151](https://github.com/notifee/react-native-notifee/issues/151)). See step #2 in [the installation guide](https://notifee.app/react-native/docs/installation)
+
 ## 1.10.1
 - **[Android]**: Fixes an issue on Android to prevent `cancelDisplayedNotifications` cancelling trigger notifications. (Fixes [#349](https://github.com/notifee/react-native-notifee/issues/349))
 
