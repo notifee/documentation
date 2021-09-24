@@ -7,21 +7,6 @@
 
 ---
 
-[> View Documentation](https://notifee.app/docs)
-
----
-
-## License
-
-- See [LICENSE](/LICENSE)
-
----
-
-<p>
-  <img align="left" width="50px" src="https://static.invertase.io/assets/invertase-logo-small.png">
-  <p align="left">
-    Built and maintained with 💛 by <a href="https://invertase.io">Invertase</a>.
-  </p>
-</p>
+> Notifee has gone [free and fully open source](https://invertase.io/blog/open-sourcing-notifee) - this repository has moved and is now part of [`invertase/notifee`](https://github.com/invertase/notifee/tree/master/docs)
 
 ---
